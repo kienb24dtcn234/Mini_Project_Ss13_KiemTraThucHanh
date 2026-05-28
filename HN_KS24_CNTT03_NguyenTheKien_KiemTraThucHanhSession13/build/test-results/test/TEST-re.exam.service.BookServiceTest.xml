@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="re.exam.service.BookServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-28T05:54:20.467Z" hostname="MacBookAir.lan" time="0.641">
+  <properties/>
+  <testcase name="deleteBook_notFound" classname="re.exam.service.BookServiceTest" time="0.613"/>
+  <testcase name="getBookById_notFound" classname="re.exam.service.BookServiceTest" time="0.003"/>
+  <testcase name="createBook_success" classname="re.exam.service.BookServiceTest" time="0.007"/>
+  <testcase name="getAllBooks_returnList" classname="re.exam.service.BookServiceTest" time="0.004"/>
+  <testcase name="getBookById_found" classname="re.exam.service.BookServiceTest" time="0.003"/>
+  <system-out><![CDATA[12:54:21.060 [Test worker] ERROR re.exam.service.BookService -- Không tìm thấy sách với ID: 99 để xóa
+12:54:21.093 [Test worker] ERROR re.exam.service.BookService -- Không tìm thấy sách với ID: 99
+12:54:21.098 [Test worker] INFO re.exam.service.BookService -- Đã tạo sách thành công với ID: 1
+12:54:21.104 [Test worker] INFO re.exam.service.BookService -- Trả về 2 cuốn sách
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

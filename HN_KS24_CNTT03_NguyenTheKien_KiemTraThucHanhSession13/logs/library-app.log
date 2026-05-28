@@ -201,3 +201,129 @@ Unconditional classes:
 [2026-05-28 12:49:01] [INFO] [re.exam.aspect.BookServiceAspect] - [AOP - BEFORE] Method: createBook | Args: [Book(id=null, title=Java Core, author=Nguyen Van A, category=Programming, quantity=10)]
 [2026-05-28 12:49:01] [INFO] [re.exam.service.BookService] - Đã tạo sách thành công với ID: 1
 [2026-05-28 12:49:01] [INFO] [re.exam.aspect.BookServiceAspect] - [AOP - AFTER RETURNING] Method: createBook | Result: Book(id=1, title=Java Core, author=Nguyen Van A, category=Programming, quantity=10)
+[2026-05-28 12:53:54] [INFO] [r.exam.controller.BookControllerTest] - Starting BookControllerTest using Java 17.0.12 with PID 34797 (started by nguyenthekien in /Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13)
+[2026-05-28 12:53:54] [INFO] [r.exam.controller.BookControllerTest] - No active profile set, falling back to 1 default profile: "default"
+[2026-05-28 12:53:55] [INFO] [o.s.b.t.m.w.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+[2026-05-28 12:53:55] [INFO] [o.s.t.w.s.TestDispatcherServlet] - Initializing Servlet ''
+[2026-05-28 12:53:55] [INFO] [o.s.t.w.s.TestDispatcherServlet] - Completed initialization in 1 ms
+[2026-05-28 12:53:55] [INFO] [r.exam.controller.BookControllerTest] - Started BookControllerTest in 1.034 seconds (process running for 1.701)
+[2026-05-28 12:54:27] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+[2026-05-28 12:54:27] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+[2026-05-28 12:54:27] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:54:27] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2026-05-28 12:54:27] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2026-05-28 12:54:28] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Starting HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application using Java 17.0.12 with PID 34831 (/Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13/build/classes/java/main started by nguyenthekien in /Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13)
+[2026-05-28 12:54:28] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - No active profile set, falling back to 1 default profile: "default"
+[2026-05-28 12:54:28] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2026-05-28 12:54:28] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2026-05-28 12:54:28] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-05-28 12:54:28] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+[2026-05-28 12:54:29] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+[2026-05-28 12:54:29] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:29] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+[2026-05-28 12:54:29] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.21]
+[2026-05-28 12:54:29] [INFO] [o.s.b.w.c.s.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 640 ms
+[2026-05-28 12:54:29] [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+[2026-05-28 12:54:29] [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.12.Final
+[2026-05-28 12:54:29] [INFO] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-05-28 12:54:29] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2026-05-28 12:54:29] [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ef09a18
+[2026-05-28 12:54:29] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2026-05-28 12:54:29] [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2026-05-28 12:54:30] [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-05-28 12:54:30] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:54:30] [INFO] [o.s.d.j.r.q.QueryEnhancerFactories] - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2026-05-28 12:54:30] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:30] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+[2026-05-28 12:54:30] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Started HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application in 2.07 seconds (process running for 2.388)
+[2026-05-28 12:54:58] [INFO] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2026-05-28 12:54:58] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+[2026-05-28 12:54:58] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:58] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+[2026-05-28 12:54:58] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:58] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:54:58] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2026-05-28 12:54:58] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2026-05-28 12:54:58] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Starting HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application using Java 17.0.12 with PID 34831 (/Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13/build/classes/java/main started by nguyenthekien in /Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13)
+[2026-05-28 12:54:58] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - No active profile set, falling back to 1 default profile: "default"
+[2026-05-28 12:54:58] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-05-28 12:54:58] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+[2026-05-28 12:54:58] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+[2026-05-28 12:54:58] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:58] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+[2026-05-28 12:54:58] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.21]
+[2026-05-28 12:54:58] [INFO] [o.s.b.w.c.s.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 127 ms
+[2026-05-28 12:54:58] [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+[2026-05-28 12:54:58] [INFO] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-05-28 12:54:58] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+[2026-05-28 12:54:58] [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50a9f812
+[2026-05-28 12:54:58] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+[2026-05-28 12:54:58] [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2026-05-28 12:54:58] [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-05-28 12:54:58] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:54:58] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:54:58] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+[2026-05-28 12:54:58] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Started HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application in 0.396 seconds (process running for 30.513)
+[2026-05-28 12:54:58] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2026-05-28 12:55:10] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+[2026-05-28 12:55:10] [INFO] [o.s.boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+[2026-05-28 12:55:10] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:55:10] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+[2026-05-28 12:55:10] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+[2026-05-28 12:55:12] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Starting HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application using Java 17.0.12 with PID 34890 (/Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13/build/classes/java/main started by nguyenthekien in /Users/nguyenthekien/Downloads/HN_KS24_CNTT03_NguyenTheKien_KiemTraThucHanhSession13)
+[2026-05-28 12:55:12] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - No active profile set, falling back to 1 default profile: "default"
+[2026-05-28 12:55:12] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2026-05-28 12:55:12] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2026-05-28 12:55:12] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-05-28 12:55:12] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+[2026-05-28 12:55:12] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+[2026-05-28 12:55:12] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:55:12] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+[2026-05-28 12:55:12] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.21]
+[2026-05-28 12:55:13] [INFO] [o.s.b.w.c.s.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 639 ms
+[2026-05-28 12:55:13] [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+[2026-05-28 12:55:13] [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.12.Final
+[2026-05-28 12:55:13] [INFO] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-05-28 12:55:13] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2026-05-28 12:55:13] [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fadfd04
+[2026-05-28 12:55:13] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2026-05-28 12:55:13] [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2026-05-28 12:55:13] [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-05-28 12:55:13] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-05-28 12:55:13] [INFO] [o.s.d.j.r.q.QueryEnhancerFactories] - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2026-05-28 12:55:14] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2026-05-28 12:55:14] [INFO] [o.s.boot.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+[2026-05-28 12:55:14] [INFO] [r.e.HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application] - Started HnKs24Cntt03NguyenTheKienKiemTraThucHanhSession13Application in 2.036 seconds (process running for 2.345)

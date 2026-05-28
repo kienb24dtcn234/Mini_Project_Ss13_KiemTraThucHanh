@@ -7,10 +7,10 @@ import re.exam.service.BookService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.bean.MockBean;
+import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Arrays;
@@ -27,11 +27,11 @@ class BookControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
+    @MockitoBean
     private BookService bookService;
 
     @Test
-    @DisplayName("GET /api/books → 200 OK và danh sách JSON")
+    @DisplayName("GET /api/books → 200 OK")
     void getAllBooks_returns200() throws Exception {
         Book book1 = new Book(1L, "Java Core", "Nguyen Van A", "Programming", 10);
         Book book2 = new Book(2L, "Spring Boot", "Tran Van B", "Framework", 5);
@@ -45,7 +45,7 @@ class BookControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/books/{id} khi tìm thấy → 200 OK")
+    @DisplayName("GET /api/books/{id} found → 200 OK")
     void getBookById_found_returns200() throws Exception {
         Book book = new Book(1L, "Java Core", "Nguyen Van A", "Programming", 10);
         when(bookService.getBookById(1L)).thenReturn(book);
@@ -58,7 +58,7 @@ class BookControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/books/{id} khi không tìm thấy → 404 Not Found")
+    @DisplayName("GET /api/books/{id} not found → 404")
     void getBookById_notFound_returns404() throws Exception {
         when(bookService.getBookById(99L)).thenThrow(new BookNotFoundException(99L));
 

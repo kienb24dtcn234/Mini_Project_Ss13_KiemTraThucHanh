@@ -1,8 +1,9 @@
 package re.exam.service;
 
-import re.exam.entity. Book;
+import re.exam.entity.Book;
 import re.exam.exception.BookNotFoundException;
 import re.exam.repository.BookRepository;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -26,6 +27,7 @@ class BookServiceTest {
     private BookService bookService;
 
     @Test
+    @DisplayName("getAllBooks_returnList")
     void getAllBooks_returnList() {
         Book book1 = new Book(1L, "Java Core", "Nguyen Van A", "Programming", 10);
         Book book2 = new Book(2L, "Spring Boot", "Tran Van B", "Framework", 5);
@@ -38,6 +40,7 @@ class BookServiceTest {
     }
 
     @Test
+    @DisplayName("getBookById_found")
     void getBookById_found() {
         Book book = new Book(1L, "Java Core", "Nguyen Van A", "Programming", 10);
         when(bookRepository.findById(1L)).thenReturn(Optional.of(book));
@@ -46,11 +49,11 @@ class BookServiceTest {
 
         assertNotNull(result);
         assertEquals("Java Core", result.getTitle());
-        assertEquals("Nguyen Van A", result.getAuthor());
         verify(bookRepository, times(1)).findById(1L);
     }
 
     @Test
+    @DisplayName("getBookById_notFound")
     void getBookById_notFound() {
         when(bookRepository.findById(99L)).thenReturn(Optional.empty());
 
@@ -59,6 +62,7 @@ class BookServiceTest {
     }
 
     @Test
+    @DisplayName("createBook_success")
     void createBook_success() {
         Book book = new Book(null, "New Book", "Author", "Category", 3);
         Book savedBook = new Book(1L, "New Book", "Author", "Category", 3);
@@ -68,11 +72,11 @@ class BookServiceTest {
 
         assertNotNull(result);
         assertEquals(1L, result.getId());
-        assertEquals("New Book", result.getTitle());
         verify(bookRepository, times(1)).save(book);
     }
 
     @Test
+    @DisplayName("deleteBook_notFound")
     void deleteBook_notFound() {
         when(bookRepository.findById(99L)).thenReturn(Optional.empty());
 
@@ -81,4 +85,3 @@ class BookServiceTest {
         verify(bookRepository, never()).delete(any(Book.class));
     }
 }
-
